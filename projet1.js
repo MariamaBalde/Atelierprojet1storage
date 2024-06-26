@@ -133,6 +133,9 @@ function updateEtudiant(index) {
   document.querySelector("#note").value = etudiant.note;
 
   // Mettre à jour l'étudiant existant au lieu d'ajouter un nouveau
+
+    $(modals).modal("show");
+ 
   submitBtn.addEventListener("click", function updateHandler(e) {
     e.preventDefault();
 
